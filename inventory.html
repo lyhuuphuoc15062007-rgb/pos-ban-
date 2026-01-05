@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhập hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>Nhập hàng</h2>
+    <button onclick="logout()">Đăng xuất</button>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h3>Nhập sản phẩm mới</h3>
+
+        <input type="text" id="name" placeholder="Tên sản phẩm">
+        <input type="number" id="price" placeholder="Giá bán (VNĐ)">
+        <input type="number" id="stock" placeholder="Số lượng">
+        <input type="date" id="expiry">
+
+        <button onclick="addProduct()">Lưu sản phẩm</button>
+    </div>
+
+    <div class="card">
+        <h3>Danh sách kho</h3>
+        <ul id="inventory"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

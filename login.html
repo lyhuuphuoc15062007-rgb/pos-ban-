@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng nhập | Quản lý bán hàng</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+<div class="login-card">
+    <h2>Đăng nhập hệ thống</h2>
+
+    <select id="role">
+        <option value="manager">Quản lý</option>
+        <option value="staff">Nhân viên</option>
+    </select>
+
+    <input type="text" id="username" placeholder="Tên đăng nhập">
+    <input type="password" id="password" placeholder="Mật khẩu">
+
+    <button onclick="login()">Đăng nhập</button>
+    <p id="error"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

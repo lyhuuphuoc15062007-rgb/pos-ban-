@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính tiền</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <h2>Tính tiền</h2>
+    <button onclick="logout()">Đăng xuất</button>
+</header>
+
+<div class="container">
+    <div class="card">
+        <h3>Chọn sản phẩm</h3>
+
+        <select id="product">
+            <option value="20000">Nước suối - 20,000</option>
+            <option value="15000">Bánh mì - 15,000</option>
+            <option value="30000">Sữa hộp - 30,000</option>
+        </select>
+
+        <input type="number" id="quantity" placeholder="Số lượng" min="1">
+
+        <button onclick="addToBill()">Thêm vào hóa đơn</button>
+    </div>
+
+    <div class="card">
+        <h3>Hóa đơn</h3>
+        <ul id="bill"></ul>
+        <h3>Tổng tiền: <span id="total">0</span> VNĐ</h3>
+        <button onclick="checkout()">Thanh toán</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
